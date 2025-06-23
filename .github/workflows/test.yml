@@ -24,7 +24,9 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           NORMALIZER_MODEL_BASE: "google/gemma-3-1b-it"
+          NORMALIZER_MODEL_PATH: "./models/normalizer"
           REWARDS_MODEL_BASE: "google/gemma-3-1b-it"
+          REWARDS_MODEL_PATH: "./models/rewards"
         run: |
           source .venv/bin/activate
           pytest
