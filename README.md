@@ -182,6 +182,8 @@ You have 2 choices here:
 
 Using the default `mistralai/Mistral-7B-Instruct-v0.` model:
 
+_Not ready yet!_
+
 ```sh
 make tune
 ```
