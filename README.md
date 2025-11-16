@@ -70,14 +70,15 @@ I needed a self-educational project to learn how to train an LLM from scratch an
 > [!IMPORTANT]  
 > **Prerequisites:**
 > - **Git LFS** (to download the `data/` directory)
-> - **huggingface-cli** (installed globally)
-> - **pyenv**
-> - **uv**
+> - **mise** (which manages all the required tools for this project): `curl https://mise.run | sh`
 
 ```sh
 git clone https://github.com/ivangabriele/Trump-0.0-minus42B.git
 cd Trump-0.0-minus42B
+uv venv --python python3.12
+source .venv/bin/activate
 uv sync
+uv uv pip install -U "huggingface_hub"
 ```
 
 ### 1. Download Trump's social media posts
